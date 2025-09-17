@@ -1,0 +1,10 @@
+__pycache__/
+.DS_Store
+data/
+logs/
+snapshots/
+encodings/
+*.png
+*.jpg
+*.jpeg
+*.csv
