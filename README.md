@@ -17,17 +17,17 @@ conda activate facerec
 pip install -r requirements.txt
 
 # 1) Add some reference images (see structure below), then:
-python enroll_faces.py --ref_dir references --enc_dir encodings
+python3 enroll_faces.py --ref_dir references --enc_dir encodings
 
 # 2) Run the security camera (try different camera indices if you see a black screen):
-python sec_cam.py --enc_dir encodings --snap_dir snapshots --log_dir logs --camera 0
+python3 sec_cam.py --enc_dir encodings --snap_dir snapshots --log_dir logs --camera 0
 # If you see a black screen, try:
-python sec_cam.py --enc_dir encodings --snap_dir snapshots --log_dir logs --camera 1
+python3 sec_cam.py --enc_dir encodings --snap_dir snapshots --log_dir logs --camera 1
 # or
-python sec_cam.py --enc_dir encodings --snap_dir snapshots --log_dir logs --camera 2
+python3 sec_cam.py --enc_dir encodings --snap_dir snapshots --log_dir logs --camera 2
 
 # 3) Generate a quick report:
-python summarize_logs.py --log_dir logs
+python3 summarize_logs.py --log_dir logs
 ```
 
 ## Reference Image Structure
